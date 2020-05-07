@@ -4,5 +4,7 @@ class PageHeader {
   }
   updateAverage(newAverage) {
     console.log(newAverage)
+    var badgeElement = this.headerElement.querySelector('.badge');
+    badgeElement.textContent = newAverage;
   }
 }
