@@ -18,8 +18,11 @@ class App {
         "X-Access-Token": "yWCk5Gwx"
       },
       success: this.handleGetGradesSuccess,
-      error: this.handleGetGradesError,
+      error: this.handleGetGradesError
     })
+  }
+  start() {
+    this.getGrades();
   }
 
 }
